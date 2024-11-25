@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Dashboard</title>
+    <link rel="stylesheet" href="organix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="sidenav">
+            <div class="logo-search">
+                <div class="logo">
+                    <img src="./Images/Organix logo.svg" alt="logo">
+                </div>
+                <div class="searchbar">
+                        <input type="text" placeholder="Search" name="search"> 
+                </div>
+            </div>
+            <div class="top-sidenav">
+                <div>
+                    <h1 class="main-menu">MAIN MENU</h1>
+                </div>
+                <div class="elements-topsidenav">
+                    <div class="icontext-container">
+                        <div>
+                            <img src="./Images/hugeicons_home-04.svg" alt="icon">
+                        </div>
+                        <div>
+                        <p class="home-text">Home</p>
+                        </div>
+                    </div>
+                    <div class="icontext-container">
+                        <div>
+                            <img src="./Images/lineicons_folder-1.svg" alt="icon">
+                        </div>
+                        <div>
+                        <p class="home-text">Projects</p>
+                        </div>
+                    </div>
+                    <div class="icontext-container">
+                        <div>
+                            <img src="./Images/proicons_calendar.svg" alt="icon">
+                        </div>
+                        <div>
+                        <p class="home-text">Calendar</p>
+                        </div>
+                    </div>
+                    <div class="icontext-container">
+                        <div>
+                            <img src="./Images/solar_user-outline.svg" alt="icon">
+                        </div>
+                        <div>
+                        <p class="home-text">Team Member</p>
+                        </div>
+                    </div>
+                    <div class="icontext-container">
+                        <div>
+                            <img src="./Images/fluent_data-pie-16-regular.svg" alt="icon">
+                        </div>
+                        <div>
+                        <p class="home-text">Analytics</p>
+                        </div>
+                    </div>
+                    <div class="icontext-container">
+                        <div>
+                            <img src="./Images/si_wallet-line.svg" alt="icon">
+                        </div>
+                        <div>
+                        <p class="home-text">Wallet</p>
+                        </div>
+                    </div>
+                    <div class="icontext-container highlighted">
+                        <div>
+                            <img src="./Images/fluent_task-list-square-24-regular.svg" alt="icon">
+                        </div>
+                        <div>
+                        <p class="home-text">Tasks</p>
+                        </div>
+                    </div>
+                    <div class="icontext-container">
+                        <div>
+                            <img src="./Images/fluent_mail-16-regular.svg" alt="icon">
+                        </div>
+                        <div>
+                        <p class="home-text">Mail</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bottom-sidenav">
+                <div>
+                    <h1 class="main-menu">LABEL</h1>
+                </div>
+                <div class="elements-topsidenav">
+                    <div class="icontext-container">
+                        <div>
+                            <img src="./Images/Blue bullet.svg" alt="icon">
+                        </div>
+                        <div>
+                        <p class="home-text">Marketing</p>
+                        </div>
+                    </div>
+                    <div class="icontext-container">
+                        <div>
+                            <img src="./Images/Purple bullet.svg" alt="icon">
+                        </div>
+                        <div>
+                        <p class="home-text">Development</p>
+                        </div>
+                    </div>
+                    <div class="icontext-container">
+                        <div>
+                            <img src="./Images/Orange bullet.svg" alt="icon">
+                        </div>
+                        <div>
+                        <p class="home-text">Design</p>
+                        </div>
+                    </div>
+                </div>                
+
+            </div>
+
+        </div>
+
+        <div class="cardand-top-sectionscont">
+            <div class="top-section">
+                <div class="page-title">
+                    <h1>Tasks</h1>
+                </div>
+                <div class="top-right-section">
+                    <div class="add-task">
+                        <button>+ Add Task</button>
+                    </div>
+                    <div class="notification-icon">
+                        <img src="./Images/Notification icon.svg" alt="logo">
+                    </div>
+                    <div class="avatar-profile">
+                        <img src="./Images/Avatar-1.svg" alt="profile">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs-container">
+                <div class="leftsided-tabs">
+                    <div class="textplusicon outlined">
+                        <div>
+                            <img src="./Images/ri_dashboard-horizontal-line.svg" alt="icon">
+                        </div>
+                        <div>
+                            <p class="home-text selected">Board</p>
+                        </div>
+                    </div>
+                    <div class="textplusicon">
+                        <div>
+                            <img src="./Images/mynaui_table.svg" alt="icon">
+                        </div>
+                        <div>
+                            <p class="home-text">Table</p>
+                        </div>
+                    </div>
+                    <div class="textplusicon">
+                        <div>
+                            <img src="./Images/proicons_calendar2.svg" alt="icon">
+                        </div>
+                        <div>
+                            <p class="home-text">Calendar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightsided-tabs">
+                    <div class="textplusicon">
+                        <div>
+                            <img src="./Images/hugeicons_filter.svg" alt="icon">
+                        </div>
+                        <div>
+                            <p class="home-text">Filter</p>
+                        </div>
+                    </div>
+                    <div class="textplusicon">
+                        <div>
+                            <img src="./Images/bx_sort.svg" alt="icon">
+                        </div>
+                        <div>
+                            <p class="home-text">Sort</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="anothertabs-container">
+                <div class="textandplus-icon">
+                    <div>
+                        <p class="tab-text">To-Do</p>
+                    </div>
+                    <div class="plus-iconcontainer">
+                        <img src="./Images/basil_plus-solid.svg" alt="icon">
+                    </div>
+                </div>
+                <div class="textandplus-icon blue">
+                    <div>
+                        <p class="tab-text">In Progress</p>
+                    </div>
+                    <div class="plus-iconcontainer lightblue">
+                        <img src="./Images/basil_plus-solid.svg" alt="icon">
+                    </div>
+                </div>
+                <div class="textandplus-icon green">
+                    <div>
+                        <p class="tab-text">Done</p>
+                    </div>
+                    <div class="plus-iconcontainer lightgreen">
+                        <img src="./Images/basil_plus-solid.svg" alt="icon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-container">
+                <div class="two-left-side-cards">
+                    <!-- card-one has a shadow, so research how to implement -->
+                    <div class="card-one">
+                        <div class="topsection-card-one">
+                            <div class="first-top">
+                                <div>
+                                    <p class="card-top-text">DESIGN</p>
+                                </div>
+                                <div>
+                                    <img src="./Images/ri_more-line.svg" alt="icon">
+                                </div>
+                            </div>
+                            <div class="globe">
+                                <img src="./Images/handimage.png" alt="hand holding a globe">
+                            </div>
+                        </div>
+                        <div class="bottomsection-card-one">
+                            <div class="title-subtitle">
+                                <div>
+                                    <p class="title-text">Customer Journey Mapping</p>
+                                </div>
+                                <div>
+                                    <p class="subtitle-text">Kidszone</p>
+                                </div>
+                            </div>
+                            <div class="flag-date">
+                                <div class="textplusicon orange-fill">
+                                    <div>
+                                        <img src="./Images/mynaui_flag.svg" alt="icon">
+                                    </div>
+                                    <div>
+                                        <p class="home-text diff-color">Medium</p>
+                                    </div>
+                                </div>
+                                <div class="textplusicon gray-fill">
+                                    <div>
+                                        <img src="./Images/mage_clock.svg" alt="icon">
+                                    </div>
+                                    <div>
+                                        <p class="home-text">25 October</p>
+                                    </div>
+                                </div>
+                            </div>                        
+                            <div class="last-section-cards">
+                                <div class="avatars">
+                                    <div>
+                                        <img src="./Images/Avatar-2.svg" alt="user">
+                                    </div>
+                                    <div>
+                                        <img src="./Images/Avatar-1.svg" alt="user">
+                                    </div>
+                                    <div>
+                                        <img src="./Images/Avatar.svg" alt="user">
+                                    </div>
+                                </div>
+                                <div class="right-last-section">
+                                    <div class="textplusicon">
+                                        <div>
+                                            <img src="./Images/tdesign_link.svg" alt="icon">
+                                        </div>
+                                        <div>
+                                            <p class="home-text">16</p>
+                                        </div>
+                                    </div>
+                                    <div class="textplusicon">
+                                        <div>
+                                            <img src="./Images/hugeicons_message-01.svg" alt="icon">
+                                        </div>
+                                        <div>
+                                            <p class="home-text">21</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <!-- Fourth card -->
+                    <div class="card-four">
+                <div class="top-section-othercards">
+                    <div class="first-top">
+                        <div>
+                            <p class="card-top-text">DESIGN</p>
+                        </div>
+                        <div>
+                            <img src="./Images/ri_more-line.svg" alt="icon">
+                        </div>
+                    </div>
+                    <div class="title-subtitle">
+                        <div>
+                            <p class="title-text">UI Component Modification</p>
+                        </div>
+                        <div>
+                            <p class="subtitle-text">Bookly</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-section-othercards">
+                    <div>
+                        <p class="card-description">Micro interactions, Loading and Progress .</p>
+                    </div>
+                    <div class="flag-date">
+                        <div class="textplusicon orange-fill">
+                            <div>
+                                <img src="./Images/mynaui_flag.svg" alt="icon">
+                            </div>
+                            <div>
+                                <p class="home-text diff-color">Medium</p>
+                            </div>
+                        </div>
+                        <div class="textplusicon gray-fill">
+                            <div>
+                                <img src="./Images/mage_clock.svg" alt="icon">
+                            </div>
+                            <div>
+                                <p class="home-text">28 October</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="last-section-cards">
+                        <div class="avatars">
+                            <div>
+                                <img src="./Images/Avatar-2.svg" alt="user">
+                            </div>
+                            <div>
+                                <img src="./Images/Avatar-1.svg" alt="user">
+                            </div>
+                            <div>
+                                <img src="./Images/Avatar.svg" alt="user">
+                            </div>
+                        </div>
+                        <div class="right-last-section">
+                            <div class="textplusicon">
+                                <div>
+                                    <img src="./Images/tdesign_link.svg" alt="icon">
+                                </div>
+                                <div>
+                                    <p class="home-text">03</p>
+                                </div>
+                            </div>
+                            <div class="textplusicon">
+                                <div>
+                                    <img src="./Images/hugeicons_message-01.svg" alt="icon">
+                                </div>
+                                <div>
+                                    <p class="home-text">32</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                
+                <!-- Second card -->
+                <div class="four-right-side-cards">
+                    <div class="other-cards">
+                        <div class="top-section-othercards">
+                            <div class="first-top">
+                                <div>
+                                    <p class="card-top-text development">DEVELOPMENT</p>
+                                </div>
+                                <div>
+                                    <img src="./Images/ri_more-line.svg" alt="icon">
+                                </div>
+                            </div>
+                            <div class="title-subtitle">
+                                <div>
+                                    <p class="title-text">Database Customization</p>
+                                </div>
+                                <div>
+                                    <p class="subtitle-text">Uber</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-section-othercards">
+                            <div>
+                                <p class="card-description">Customizing the database for Uber's internal system, focusing on micro-interactions.</p>
+                            </div>
+                            <div class="flag-date">
+                                <div class="textplusicon orange-fill">
+                                    <div>
+                                        <img src="./Images/mynaui_flag.svg" alt="icon">
+                                    </div>
+                                    <div>
+                                        <p class="home-text diff-color">Medium</p>
+                                    </div>
+                                </div>
+                                <div class="textplusicon gray-fill">
+                                    <div>
+                                        <img src="./Images/mage_clock.svg" alt="icon">
+                                    </div>
+                                    <div>
+                                        <p class="home-text">21 October</p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="last-section-cards">
+                                <div class="avatars">
+                                    <div>
+                                        <img src="./Images/Avatar-2.svg" alt="user">
+                                    </div>
+                                    <div>
+                                        <img src="./Images/Avatar-1.svg" alt="user">
+                                    </div>
+                                </div>
+                                <div class="right-last-section">
+                                    <div class="textplusicon">
+                                        <div>
+                                            <img src="./Images/tdesign_link.svg" alt="icon">
+                                        </div>
+                                        <div>
+                                            <p class="home-text">10</p>
+                                        </div>
+                                    </div>
+                                    <div class="textplusicon">
+                                        <div>
+                                            <img src="./Images/hugeicons_message-01.svg" alt="icon">
+                                        </div>
+                                        <div>
+                                            <p class="home-text">06</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third card -->
+                    <div class="other-cards">
+                    <div class="top-section-othercards">
+                        <div class="first-top">
+                            <div>
+                                <p class="card-top-text">DESIGN</p>
+                            </div>
+                            <div>
+                                <img src="./Images/ri_more-line.svg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="title-subtitle">
+                            <div>
+                                <p class="title-text">Redesign Wordpress Website</p>
+                            </div>
+                            <div>
+                                <p class="subtitle-text">Design Lab</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-section-othercards">
+                        <div>
+                            <p class="card-description">Redesigning the website for Design Lab to enhance usability and visual appeal.</p>
+                        </div>
+                        <div class="flag-date">
+                            <div class="textplusicon red-fill">
+                                <div>
+                                    <img src="./Images/mynaui_flag_red.svg" alt="icon">
+                                </div>
+                                <div>
+                                    <p class="home-text diff-color red">High</p>
+                                </div>
+                            </div>
+                            <div class="textplusicon gray-fill">
+                                <div>
+                                    <img src="./Images/mage_clock.svg" alt="icon">
+                                </div>
+                                <div>
+                                    <p class="home-text">17 October</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="last-section-cards">
+                            <div class="avatars">
+                                <div>
+                                    <img src="./Images/Avatar-2.svg" alt="user">
+                                </div>
+                                <div>
+                                    <img src="./Images/Avatar-1.svg" alt="user">
+                                </div>
+                                <div>
+                                    <img src="./Images/Avatar.svg" alt="user">
+                                </div>
+                            </div>
+                            <div class="right-last-section">
+                                <div class="textplusicon">
+                                    <div>
+                                        <img src="./Images/tdesign_link.svg" alt="icon">
+                                    </div>
+                                    <div>
+                                        <p class="home-text">02</p>
+                                    </div>
+                                </div>
+                                <div class="textplusicon">
+                                    <div>
+                                        <img src="./Images/hugeicons_message-01.svg" alt="icon">
+                                    </div>
+                                    <div>
+                                        <p class="home-text">29</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Fifth card -->
+                    <div class="other-cards">
+                    <div class="top-section-othercards">
+                        <div class="first-top">
+                            <div>
+                                <p class="card-top-text">3D MODELLING</p>
+                            </div>
+                            <div>
+                                <img src="./Images/ri_more-line.svg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="title-subtitle">
+                            <div>
+                                <p class="title-text">Fix Interior Planning</p>
+                            </div>
+                            <div>
+                                <p class="subtitle-text">Hotel Nice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-section-othercards">
+                        <div>
+                            <p class="card-description">Addressing layout and functional issues in the 3D modelling of the interior spaces.</p>
+                        </div>
+                        <div class="flag-date">
+                            <div class="textplusicon success">
+                                <div>
+                                    <img src="./Images/mynaui_flag-green.svg" alt="icon">
+                                </div>
+                                <div>
+                                    <p class="home-text diff-color green-text">Low</p>
+                                </div>
+                            </div>
+                            <div class="textplusicon gray-fill">
+                                <div>
+                                    <img src="./Images/mage_clock.svg" alt="icon">
+                                </div>
+                                <div>
+                                    <p class="home-text">13 October</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="last-section-cards">
+                            <div class="avatars">
+                                <div>
+                                    <img src="./Images/Avatar-2.svg" alt="user">
+                                </div>
+                                <div>
+                                    <img src="./Images/Avatar-1.svg" alt="user">
+                                </div>
+                                <div>
+                                    <img src="./Images/Avatar.svg" alt="user">
+                                </div>
+                            </div>
+                            <div class="right-last-section">
+                                <div class="textplusicon">
+                                    <div>
+                                        <img src="./Images/tdesign_link.svg" alt="icon">
+                                    </div>
+                                    <div>
+                                        <p class="home-text">13</p>
+                                    </div>
+                                </div>
+                                <div class="textplusicon">
+                                    <div>
+                                        <img src="./Images/hugeicons_message-01.svg" alt="icon">
+                                    </div>
+                                    <div>
+                                        <p class="home-text">09</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- sixth card -->
+                    <div class="other-cards">
+                    <div class="top-section-othercards">
+                        <div class="first-top">
+                            <div>
+                                <p class="card-top-text">3D MODELLING</p>
+                            </div>
+                            <div>
+                                <img src="./Images/ri_more-line.svg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="title-subtitle">
+                            <div>
+                                <p class="title-text">Facebook Ads Campaign</p>
+                            </div>
+                            <div>
+                                <p class="subtitle-text">Plantify</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-section-othercards">
+                        <div class="flag-date">
+                            <div class="textplusicon orange-fill">
+                                <div>
+                                    <img src="./Images/mynaui_flag.svg" alt="icon">
+                                </div>
+                                <div>
+                                    <p class="home-text diff-color">Medium</p>
+                                </div>
+                            </div>
+                            <div class="textplusicon gray-fill">
+                                <div>
+                                    <img src="./Images/mage_clock.svg" alt="icon">
+                                </div>
+                                <div>
+                                    <p class="home-text">21 October</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="last-section-cards">
+                            <div class="avatars">
+                                <div>
+                                    <img src="./Images/Avatar-2.svg" alt="user">
+                                </div>
+                                <div>
+                                    <img src="./Images/Avatar-1.svg" alt="user">
+                                </div>
+                                <div>
+                                    <img src="./Images/Avatar.svg" alt="user">
+                                </div>
+                            </div>
+                            <div class="right-last-section">
+                                <div class="textplusicon">
+                                    <div>
+                                        <img src="./Images/tdesign_link.svg" alt="icon">
+                                    </div>
+                                    <div>
+                                        <p class="home-text">13</p>
+                                    </div>
+                                </div>
+                                <div class="textplusicon">
+                                    <div>
+                                        <img src="./Images/hugeicons_message-01.svg" alt="icon">
+                                    </div>
+                                    <div>
+                                        <p class="home-text">17</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                 </div>
+                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+
+
+
+
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
